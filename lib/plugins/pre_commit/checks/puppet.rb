@@ -17,7 +17,7 @@ module PreCommit
       def run_check(file)
         # We force puppet to display errors otherwise they will likely end up in the
         # error_log and not in stdout.
-        result = `puppet parser validate #{file} 2>&1`
+        result = `puppet parser validate --color=false #{file} 2>&1`
         # If PHP exited non-zero then there was a parse error.
         result.strip unless $? == 0
       end

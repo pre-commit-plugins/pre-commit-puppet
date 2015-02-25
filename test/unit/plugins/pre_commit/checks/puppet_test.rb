@@ -17,6 +17,6 @@ describe PreCommit::Checks::Puppet do
   end
 
   it "fails if script fails" do
-    check.call([fixture_file("bad.pp")]).must_match(/Error: Could not parse/i)
+    check.call([fixture_file("bad.pp")]).must_match(/^Error: Could not parse/i)
   end
 end

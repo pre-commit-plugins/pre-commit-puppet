@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   }
 
   s.add_dependency("pre-commit")#, "~> 0.20")
-  s.add_dependency("puppet-lint")
 
   s.add_development_dependency("guard", "~> 2.0")
   s.add_development_dependency("guard-minitest", "~> 2.0")

@@ -9,7 +9,7 @@ then
       SimpleCov::Formatter::HTMLFormatter,
       Coveralls::SimpleCov::Formatter,
     ]
-    command_name "Spesc Tests"
+    command_name "Spec Tests"
     add_filter "/test/"
   end
 
